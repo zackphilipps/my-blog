@@ -10,7 +10,7 @@
             <header>
                 <h1 class="title">{{title}}</h1>
                 <h2 class="caption">
-                    Posted on <time datetime="{{date format='YYYY-MM-DD'}}">{{date format='MMMM DD, YYYY'}}</time> under {{tags}}.
+                    Posted on <time datetime="{{date format='YYYY-MM-DD'}}">{{date format='MMMM DD, YYYY'}}</time>{{#if tags}} under {{tags}}{{/if}}.
                 </h2>
             </header>
             <div class="content">

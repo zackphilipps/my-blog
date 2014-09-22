@@ -2,3 +2,14 @@
 
 {{> index-meta}}
 
+<article class="wrapper" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+    <div class="article-blur" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}></div>
+    <div class="container">
+        <header>
+            <h1 class="title">{{@blog.title}}</h1>
+            <h2 class="caption">{{@blog.description}}</h2>
+        </header>
+    </div>
+</article>
+
+{{> excerpts}}

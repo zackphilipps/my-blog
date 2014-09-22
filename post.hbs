@@ -5,6 +5,7 @@
     {{> post-meta}}
 
     <article {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+        <div class="article-blur" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}></div>
         <div class="container">
             <header>
                 <h1 class="title">{{title}}</h1>

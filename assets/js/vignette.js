@@ -8,6 +8,13 @@ $(function () {
     // Execute FastClick.js
     FastClick.attach(document.body);
 
+    // Blur background on scroll
+    $(window).scroll(function (e) {
+        var s = $(window).scrollTop(),
+            opacityVal = (s / 150.0);
+        $('.article-blur').css('opacity', opacityVal);
+    });
+
     // Social sharing links
     $('#twitter').click(function () {
         window.open(this.href, 'twitter-share', 'width=550,height=235');

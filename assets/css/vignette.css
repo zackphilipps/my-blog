@@ -38,14 +38,31 @@ body {
 	line-height: 1.5;
 }
 
+article, .article-blur {
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
 article {
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-attachment: fixed;
-    background-size: cover;
     color: #fff;
 	padding-top: 200px;
 	padding-bottom: 120px;
+	position: relative;
+	overflow: hidden;
+}
+
+.article-blur {
+	content: "";
+	top: -5%;
+	left: -5%;
+	width: 110%;
+	height: 110%;
+	position: absolute;
+	filter: blur(7px);
+	-webkit-filter: blur(7px);
+	opacity: 0;
 }
 
 article, .meta, footer {
@@ -55,6 +72,7 @@ article, .meta, footer {
 
 .container {
 	max-width: 630px;
+	position: relative;
 }
 
 h1 {

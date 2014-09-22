@@ -1,19 +1,34 @@
 /*jslint browser:true, unparam:true*/
-/*global $, FastClick*/
+/*global $, FastClick, Steady, requestAnimationFrame*/
 
 $(function () {
 
     'use strict';
 
+    // Some variables we'll need for animation
+    var blur = document.getElementById('blur').style,
+        ticking = false;
+
     // Execute FastClick.js
     FastClick.attach(document.body);
 
-    // Blur background on scroll
-    $(window).scroll(function (e) {
-        var s = $(window).scrollTop(),
-            opacityVal = (s / 150.0);
-        $('.article-blur').css('opacity', opacityVal);
-    });
+    // Update the post image blur
+    function update() {
+        var s = $(window).scrollTop();
+        blur.opacity = s / 150;
+        ticking = false;
+    }
+
+    // Magic to help improve blur performance
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+            ticking = true;
+        }
+    }
+
+    // Add event listener to scroll
+    window.addEventListener('scroll', requestTick, false);
 
     // Social sharing links
     $('#twitter').click(function () {

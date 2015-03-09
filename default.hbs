@@ -23,7 +23,7 @@
 
         {{! OpenGraph for Facebook }}
         <meta property="og:title" content="{{meta_title}}" />
-        <meta property="og:image" content="{{@blog.url}}/assets/images/open-graph.png" />
+        <meta property="og:image" content="{{@blog.url}}/assets/images/open-graph.png?v=2" />
         <meta property="og:locale" content="en_US" />
 
         {{! Twitter Card }}
@@ -32,9 +32,9 @@
         {{#if @blog.cover}}<meta property="twitter:image" content="{{@blog.cover}}" />{{/if}}
 
         {{! Icons }}
-        <link rel="icon" href="{{asset 'favicon.ico'}}" />
-        <link rel="icon" sizes="196x196" href="{{asset 'images/android-homescreen.png'}}" />
-        <link rel="apple-touch-icon" href="{{asset 'images/apple-touch-icon.png'}}" />
+        <link rel="icon" href="{{asset 'favicon.ico?v=2'}}" />
+        <link rel="icon" sizes="196x196" href="{{asset 'images/android-homescreen.png?v=2'}}" />
+        <link rel="apple-touch-icon" href="{{asset 'images/apple-touch-icon.png?v=2'}}" />
 
         {{! Prerendering and Prefetching }}
         {{#if @blog.cover}}
@@ -58,26 +58,30 @@
     </head>
     <body class="{{body_class}}">
 
-        <section id="wrapper">
-            <header id="header">
-                <a id="title" class="index" href="{{@blog.url}}">{{@blog.title}}</a>
-            </header>
+      <section id="wrapper">
+        <header id="header">
+          <a id="title" class="index" href="{{@blog.url}}">
+            <img class="avatar" src="{{@blog.logo}}" alt="{{@blog.title}}">
+            <h1>{{@blog.title}}</h1>
+          </a>
+          <p class="header-description">Executive Director at <a href="//tribeswell.com">Tribeswell</a>. Co-Creator of <a href="//scratchtheme.com">Scratch Theme for WordPress + ACF</a>. Lover of all things design, tech, music, and coffee.</p>
+        </header>
 
-            {{{body}}}
+        {{{body}}}
 
-            <footer id="footer">
-                <p class="small">
-                    <a href="https://github.com/haydenbleasel/phantom">Theme: Cactus by Hayden Bleasel</a>
-                </p>
-            </footer>
+        <footer id="footer">
+            <!-- <p class="small">
+                <a href="https://github.com/haydenbleasel/phantom">Theme: Cactus by Hayden Bleasel</a>
+            </p> -->
+        </footer>
 
-        </section>
+      </section>
 
-        {{ghost_foot}}
+      {{ghost_foot}}
 
-        {{! Deferred scripts }}
-        <script src="{{asset 'js/fastclick.js'}}"></script>
-        <script src="{{asset 'js/cactus.js'}}"></script>
+      {{! Deferred scripts }}
+      <script src="{{asset 'js/fastclick.js'}}"></script>
+      <script src="{{asset 'js/cactus.js'}}"></script>
 
     </body>
 </html>

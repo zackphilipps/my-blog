@@ -90,9 +90,9 @@ a,
 #title,
 #post-list a:hover,
 #post-list li:hover .dates,
-#title:hover {
+#title:hover,
+#title h1 {
   text-decoration: none;
-  color: #5badf0;
   color: #5694f1;
 }
 
@@ -141,6 +141,18 @@ em, i {
   padding-bottom: 20px;
 }
 
+#title .avatar {
+  width: 60px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+
+#title h1 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .description {
   float: right;
   font: italic 14px/1.4em Georgia,serif;
@@ -176,6 +188,11 @@ h2 {
   color: #aaa;
   max-width: 400px;
   margin-top: 2px;
+}
+
+.header-description {
+  font: normal 17px/1.5em "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #aaa;
 }
 
 h1, h2, h3 {
@@ -245,12 +262,11 @@ pre, code {
 
 code {
   padding: 2px;
-  white-space: normal;
 }
 
 pre code {
   border: 0;
-  background-color: none;
+  background-color: transparent;
   overflow: visible;
   border-radius: 0;
 }
@@ -388,7 +404,7 @@ footer {
 #index-meta {
   font-size: 13px;
   line-height: 1.4;
-  margin-top: 80px;
+  margin-top: 100px;
   color: #444;
   text-align: center;
 }

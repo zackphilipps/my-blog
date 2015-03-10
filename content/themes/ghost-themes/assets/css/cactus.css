@@ -349,7 +349,7 @@ Post List
 #post-list a {
   color: #333;
   display: block;
-  font: bold 19px/1.7 "Helvetica Neue",helvetica,Arial,sans-serif;
+  font: bold 17px/1.8 "Helvetica Neue",helvetica,Arial,sans-serif;
 }
 
 #post-list b {
@@ -362,8 +362,6 @@ Post List
 
 #post-list .dates {
   float: right;
-  position: relative;
-  top: 1px;
   font: 300 17px/1.8 "Helvetica Neue",helvetica,Arial,sans-serif;
   color: #bbb;
 }
@@ -612,7 +610,7 @@ Author
   .post {
     margin: 40px 0;
   }
-  footer {
+  #index-meta {
     margin-top: 60px;
   }
   #post-list, #archive-list {
@@ -637,4 +635,10 @@ Author
   .post h2.headline {
     font-size: 20px;
   }
+}
+
+/* Zack styles */
+
+#post-list {
+  padding-left: 0;
 }

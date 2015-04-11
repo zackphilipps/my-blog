@@ -645,3 +645,25 @@ Author
 #post-list {
   padding-left: 0;
 }
+
+.header-description i {
+	font-size: 1.3em;
+	vertical-align: middle;
+	opacity: 0.85;
+}
+
+@media (max-width: 400px) {
+	#comments {
+		margin-top: 40px;
+	}
+	#post-meta div {
+		float: none;
+		margin: 0 0 1em;
+	}
+	#sharing {
+		float: none;
+	}
+	#sharing a {
+		margin-top: 0;
+	}
+}

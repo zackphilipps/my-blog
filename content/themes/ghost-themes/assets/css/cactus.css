@@ -100,17 +100,6 @@ p a {
   color: #5694f1;
 }
 
-/*Transitions*/
-a,
-#post-nav a,
-#post-list a {
-  -webkit-transition: all 0.15s ease;
-  -moz-transition: all 0.15s ease;
-  -ms-transition: all 0.15s ease;
-  -o-transition: all 0.15s ease;
-  transition: all 0.15s ease;
-}
-
 ul {
   margin: 0;
 }
@@ -606,35 +595,45 @@ Author
   #wrapper {
     padding: 20px 20px 20px 20px;
   }
+
   #header {
     margin-bottom: 60px;
     border-bottom: 1px solid #eee;
   }
+
   .post {
     margin: 40px 0;
   }
+
   #index-meta {
     margin-top: 60px;
   }
+
   #post-list, #archive-list {
     margin-top: 0;
   }
+
   #post-meta {
     margin-top: 60px;
   }
+
   #title {
     font-size: 17px;
   }
+
   #post-list .dates {
     display: none;
   }
+
   #post-list-footer {
     margin-top: 20px;
     padding-top: 40px;
   }
+
   h1 {
     font-size: 26px;
   }
+
   .post h2.headline {
     font-size: 20px;
   }
@@ -647,23 +646,26 @@ Author
 }
 
 .header-description i {
-	font-size: 1.3em;
-	vertical-align: middle;
-	opacity: 0.85;
+  font-size: 1.3em;
+  vertical-align: middle;
+  opacity: 0.85;
 }
 
 @media (max-width: 400px) {
-	#comments {
-		margin-top: 40px;
-	}
-	#post-meta div {
-		float: none;
-		margin: 0 0 1em;
-	}
-	#sharing {
-		float: none;
-	}
-	#sharing a {
-		margin-top: 0;
-	}
+  #comments {
+    margin-top: 40px;
+  }
+
+  #post-meta div {
+    float: none;
+    margin: 0 0 1em;
+  }
+
+  #sharing {
+    float: none;
+  }
+
+  #sharing a {
+    margin-top: 0;
+  }
 }

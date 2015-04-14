@@ -96,6 +96,31 @@ a,
   color: #5694f1;
 }
 
+#post-list li:nth-child(1) a:hover,
+#post-list li:nth-child(1):hover .dates {
+  color: #4cc148;
+}
+
+#post-list li:nth-child(2) a:hover,
+#post-list li:nth-child(2):hover .dates {
+  color: #4bb084;
+}
+
+#post-list li:nth-child(3) a:hover,
+#post-list li:nth-child(3):hover .dates {
+  color: #4aa2b7;
+}
+
+#post-list li:nth-child(5) a:hover,
+#post-list li:nth-child(5):hover .dates {
+  color: #AC61D0;
+}
+
+#post-list li:nth-child(6) a:hover,
+#post-list li:nth-child(6):hover .dates {
+  color: #f4a827;
+}
+
 a, #post-list li .dates {
   -webkit-transition: ease-in-out color 0.25s;
   -moz-transition: ease-in-out color 0.25s;

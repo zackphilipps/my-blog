@@ -108,10 +108,7 @@ p a {
 
 ul {
   margin: 0;
-}
-
-li {
-  list-style-position: inside;
+  padding-left: 2em;
 }
 
 /* Line Height */
@@ -333,6 +330,7 @@ Post List
 
 #post-list li, #archive-list li {
   list-style-type: none;
+  padding-left: 0;
 }
 
 #post-list li:last-child {

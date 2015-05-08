@@ -660,11 +660,12 @@ Author
 
   #post-meta div {
     float: none;
-    margin: 0 0 1em;
+    margin: 0.75em 0;
   }
 
   #sharing {
-    float: none;
+    display: none;
+    visibility: hidden;
   }
 
   #sharing a {

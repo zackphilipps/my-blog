@@ -231,6 +231,7 @@ p.small a:hover {
 blockquote {
   padding-left: 15px;
   border-left: 3px solid #eee;
+  margin: 0;
 }
 
 hr {

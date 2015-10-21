@@ -249,7 +249,7 @@ pre, code {
   padding: 20px;
   background-color: #fdfdfd;
   font-size: 14px;
-  overflow-x: scroll;
+  overflow-x: auto;
   border-radius: 4px;
 }
 

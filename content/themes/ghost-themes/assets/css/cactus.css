@@ -411,6 +411,8 @@ footer {
 
 .newer-posts, .older-posts {
   position: absolute;
+  font-weight: 500;
+  font-size: 13px;
 }
 
 .newer-posts {
@@ -419,6 +421,14 @@ footer {
 
 .older-posts {
   right: 0;
+}
+
+.newer-posts:hover {
+  left: -3px;
+}
+
+.older-posts:hover {
+  right: -3px;
 }
 
 /*=========================================
@@ -699,4 +709,12 @@ Author
   text-align: center;
   max-width: 300px;
   margin: 0 auto 20px;
+}
+
+#footer {
+  text-align: center;
+}
+
+#footer p {
+  float: none;
 }

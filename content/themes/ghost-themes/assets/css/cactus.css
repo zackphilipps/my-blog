@@ -9,7 +9,6 @@ Icons
   font-style: normal;
 }
 
-
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon';
   speak: none;
@@ -18,6 +17,7 @@ Icons
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -130,19 +130,19 @@ em, i {
   font-weight: 500;
   font-size: 19px;
   margin: 0;
-  padding-bottom: 20px;
 }
 
 #title .avatar {
-  width: 60px;
+  width: 80px;
   border-radius: 50%;
-  vertical-align: middle;
-  margin-right: 0.5em;
+  display: block;
+  margin: 0 auto 20px;
 }
 
 #title h1 {
+  margin: 0;
   display: inline-block;
-  vertical-align: middle;
+  line-height: 100%;
 }
 
 .description {
@@ -185,6 +185,7 @@ h2 {
 .header-description {
   font: normal 17px/1.5em "Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #aaa;
+  margin-bottom: 1em;
 }
 
 h1, h2, h3 {
@@ -672,4 +673,30 @@ Author
   #sharing a {
     margin-top: 0;
   }
+}
+
+#docs {
+  position: fixed;
+  top: 8px;
+  right: 6px;
+  background: #5badf0;
+  color: #fff;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.35;
+  border-radius: 3px;
+  z-index: 100;
+}
+
+@media screen and (max-width: 440px) {
+  a#docs {
+    display: none;
+  }
+}
+
+#header {
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto 20px;
 }

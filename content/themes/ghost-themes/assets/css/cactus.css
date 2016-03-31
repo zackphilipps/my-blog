@@ -731,3 +731,8 @@ Author
 #footer p {
   float: none;
 }
+
+iframe {
+  margin: 1em auto 20px;
+  display: block;
+}

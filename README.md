@@ -114,5 +114,3 @@ New releases are announced on the [dev blog](http://dev.ghost.org/tag/releases/)
 # Copyright & License
 
 Copyright (c) 2013-2016 Ghost Foundation - Released under the [MIT license](LICENSE).
-
-yund

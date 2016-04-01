@@ -732,7 +732,7 @@ Author
   float: none;
 }
 
-iframe {
+#post-body iframe {
   margin: 1em auto 20px;
   display: block;
 }

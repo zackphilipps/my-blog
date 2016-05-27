@@ -14,7 +14,7 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="format-detection" content="telephone=yes" />
         <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="msapplication-TileImage" content="{{asset 'images/windows-tile.png'}}" />
+        <meta name="msapplication-TileImage" content="{{asset 'images/windows-tile.png?v=2'}}" />
         <meta name="msapplication-TileColor" content="#262A2D" />
 
         {{! Robots and Viewport }}
@@ -23,7 +23,7 @@
 
         {{! OpenGraph for Facebook }}
         <meta property="og:title" content="{{meta_title}}" />
-        <meta property="og:image" content="{{@blog.url}}/assets/images/open-graph.png" />
+        <meta property="og:image" content="{{@blog.url}}/assets/images/open-graph.png?v=2" />
         <meta property="og:locale" content="en_US" />
 
         {{! Twitter Card }}
@@ -39,9 +39,9 @@
         {{ghost_head}}
 
         {{! Icons }}
-        <link rel="icon" href="{{asset 'images/favicon.ico'}}" />
-        <link rel="icon" sizes="196x196" href="{{asset 'images/android-homescreen.png'}}" />
-        <link rel="apple-touch-icon" href="{{asset 'images/apple-touch-icon.png'}}" />
+        <link rel="icon" href="{{asset 'images/favicon.ico?v=2'}}" />
+        <link rel="icon" sizes="196x196" href="{{asset 'images/android-homescreen.png?v=2'}}" />
+        <link rel="apple-touch-icon" href="{{asset 'images/apple-touch-icon.png?v=2'}}" />
 
         {{! Prerendering and Prefetching }}
         {{#if @blog.cover}}

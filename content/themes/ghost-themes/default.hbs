@@ -1,105 +1,105 @@
 <!doctype html>
 <html lang="en-US">
-    <head>
+  <head>
 
-        {{! Document settings and metadata }}
-        <title>{{meta_title}}</title>
-        <meta charset="utf-8">
-        <meta name="designer" content="Hayden Bleasel">
-        <meta name="rating" content="general">
-        <meta name="keywords" content="{{meta_title}}, web, front end, designer, developer, blog">
+    {{! Document settings and metadata }}
+    <title>{{meta_title}}</title>
+    <meta charset="utf-8">
+    <meta name="designer" content="Hayden Bleasel">
+    <meta name="rating" content="general">
+    <meta name="keywords" content="{{meta_title}}, web, front end, designer, developer, blog">
 
-        {{! iOS, Android and Windows stuff }}
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="format-detection" content="telephone=yes">
-        <meta name="mobile-web-app-capable" content="yes">
-        <meta name="msapplication-TileImage" content="{{asset 'images/windows-tile.png?v=2'}}">
-        <meta name="msapplication-TileColor" content="#262A2D">
+    {{! iOS, Android and Windows stuff }}
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-TileImage" content="{{asset 'images/windows-tile.png?v=2'}}">
+    <meta name="msapplication-TileColor" content="#262A2D">
 
-        {{! Robots and Viewport }}
-        <meta name="robots" content="index, follow">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{! Robots and Viewport }}
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        {{! Page-Specific Metadata }}
-        {{{block "meta"}}}
+    {{! Page-Specific Metadata }}
+    {{{block "meta"}}}
 
-        {{ghost_head}}
+    {{ghost_head}}
 
-        {{! Icons }}
-        <link rel="icon" href="{{asset 'images/favicon.ico?v=2'}}">
-        <link rel="icon" sizes="196x196" href="{{asset 'images/android-homescreen.png?v=2'}}">
-        <link rel="apple-touch-icon" href="{{asset 'images/apple-touch-icon.png?v=2'}}">
+    {{! Icons }}
+    <link rel="icon" href="{{asset 'images/favicon.ico?v=2'}}">
+    <link rel="icon" sizes="196x196" href="{{asset 'images/android-homescreen.png?v=2'}}">
+    <link rel="apple-touch-icon" href="{{asset 'images/apple-touch-icon.png?v=2'}}">
 
-        {{! Prerendering and Prefetching }}
-        {{#if @blog.cover}}
-            <link rel="prerender" href="{{@blog.cover}}">
-            <link rel="prefetch" href="{{@blog.cover}}">
-        {{/if}}
+    {{! Prerendering and Prefetching }}
+    {{#if @blog.cover}}
+        <link rel="prerender" href="{{@blog.cover}}">
+        <link rel="prefetch" href="{{@blog.cover}}">
+    {{/if}}
 
-        {{! Scripts and Stylesheets }}
-        <link rel="stylesheet" href="{{asset 'css/normalize.css'}}">
-        <link rel="stylesheet" href="{{asset 'css/basics.css'}}">
-        <link rel="stylesheet" href="{{asset 'css/gist.css'}}">
-        <link rel="stylesheet" href="{{asset 'css/cactus.css'}}">
-        <link rel="stylesheet" href="{{asset 'css/ionicons.min.css'}}">
-        <script src="{{asset 'js/html5shiv-printshiv.js'}}"></script>
-        <script src="{{asset 'js/respond.js'}}"></script>
+    {{! Scripts and Stylesheets }}
+    <link rel="stylesheet" href="{{asset 'css/normalize.css'}}">
+    <link rel="stylesheet" href="{{asset 'css/basics.css'}}">
+    <link rel="stylesheet" href="{{asset 'css/gist.css'}}">
+    <link rel="stylesheet" href="{{asset 'css/cactus.css'}}">
+    <link rel="stylesheet" href="{{asset 'css/ionicons.min.css'}}">
+    <script src="{{asset 'js/html5shiv-printshiv.js'}}"></script>
+    <script src="{{asset 'js/respond.js'}}"></script>
 
-        <script>
-				    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-				    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-				    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-				    e.src='//www.google-analytics.com/analytics.js';
-				    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-				    ga('create','UA-61068113-1');ga('send','pageview');
-				</script>
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-61068113-1');ga('send','pageview');
+    </script>
 
-    </head>
-    <body class="{{body_class}}">
+  </head>
+  <body class="{{body_class}}">
 
-      <a href="http://portfolio.zackphilipps.com" id="docs">View My Portfolio</a>
+    <a href="http://portfolio.zackphilipps.com" id="docs">View My Portfolio</a>
 
-      <section id="wrapper">
-        <header id="header">
-          <a id="title" class="index" href="/">
-            <img class="avatar" src="{{@blog.logo}}" alt="{{@blog.title}}">
-            <h1>{{@blog.title}}</h1>
+    <section id="wrapper">
+      <header id="header">
+        <a id="title" class="index" href="/">
+          <img class="avatar" src="{{@blog.logo}}" alt="{{@blog.title}}">
+          <h1>{{@blog.title}}</h1>
+        </a>
+        <p class="header-description">
+          Development Lead at <a href="http://elementthree.com" target="_blank">Element Three</a>.<br>
+          Software Engineer at <a href="https://www.toptal.com/#get-only-accomplished-computer-engineers-now" target="_blank">Toptal</a>.<br>
+          Co-Creator of <a href="http://scratchtheme.com" target="_blank">Scratch</a>.<br>
+          Say <a href="mailto:hello@zackphilipps.com">hello</a> or
+          <a href="http://twitter.com/zackphilipps" target="_blank">
+            <i class="ion-social-twitter"></i>
           </a>
-          <p class="header-description">
-            Development Lead at <a href="http://elementthree.com" target="_blank">Element Three</a>.<br>
-            Software Engineer at <a href="https://www.toptal.com/#get-only-accomplished-computer-engineers-now" target="_blank">Toptal</a>.<br>
-            Co-Creator of <a href="http://scratchtheme.com" target="_blank">Scratch</a>.<br>
-            Say <a href="mailto:hello@zackphilipps.com">hello</a> or
-	          <a href="http://twitter.com/zackphilipps" target="_blank">
-		          <i class="ion-social-twitter"></i>
-	          </a>
-	          <a href="http://linkedin.com/in/zackphilipps" target="_blank">
-		          <i class="ion-social-linkedin"></i>
-	          </a>
-	          <a href="http://github.com/zackphilipps" target="_blank">
-		          <i class="ion-social-octocat"></i></a>.
-          </p>
-          <p>
-          	<a href="http://portfolio.zackphilipps.com" id="docs-mobile">View My Portfolio</a>
-          </p>
-        </header>
+          <a href="http://linkedin.com/in/zackphilipps" target="_blank">
+            <i class="ion-social-linkedin"></i>
+          </a>
+          <a href="http://github.com/zackphilipps" target="_blank">
+            <i class="ion-social-octocat"></i></a>.
+        </p>
+        <p>
+          <a href="http://portfolio.zackphilipps.com" id="docs-mobile">View My Portfolio</a>
+        </p>
+      </header>
 
-        {{{body}}}
+      {{{body}}}
 
-        <footer id="footer">
-          <p class="small">
-            © Zack Philipps
-          </p>
-        </footer>
+      <footer id="footer">
+        <p class="small">
+          © Zack Philipps
+        </p>
+      </footer>
 
-      </section>
+    </section>
 
-      {{ghost_foot}}
+    {{ghost_foot}}
 
-      {{! Deferred scripts }}
-      <script src="{{asset 'js/fastclick.js'}}"></script>
-      <script src="{{asset 'js/cactus.js'}}"></script>
+    {{! Deferred scripts }}
+    <script src="{{asset 'js/fastclick.js'}}"></script>
+    <script src="{{asset 'js/cactus.js'}}"></script>
 
-    </body>
+  </body>
 </html>

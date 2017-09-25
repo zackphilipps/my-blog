@@ -38,8 +38,25 @@ Icons
 /*=========================================
 General Spacing
 =========================================== */
-.post h1, h3, h4, h5, p, .post-body ul, #post-list li, pre {
+p, .post-body ul, #post-list li {
   margin-bottom: 20px;
+}
+
+pre {
+  margin-bottom: 25px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+}
+
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p {
+  margin-top: 6px;
 }
 
 /*=========================================
@@ -313,7 +330,7 @@ img {
 
 #post-body img {
   display: block;
-  margin: 1em auto;
+  margin: 25px auto;
 }
 
 #badge {
@@ -734,6 +751,6 @@ Author
 }
 
 #post-body iframe {
-  margin: 1em auto 20px;
+  margin: 25px auto;
   display: block;
 }

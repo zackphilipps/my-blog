@@ -754,3 +754,7 @@ Author
   margin: 25px auto;
   display: block;
 }
+
+.tag-template #post-body {
+  margin-top: 10px;
+}

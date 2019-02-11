@@ -42,7 +42,6 @@
     <link rel="stylesheet" href="{{asset 'css/basics.css'}}">
     <link rel="stylesheet" href="{{asset 'css/gist.css'}}">
     <link rel="stylesheet" href="{{asset 'css/cactus.css'}}">
-    <link rel="stylesheet" href="{{asset 'css/ionicons.min.css'}}">
     <script src="{{asset 'js/html5shiv-printshiv.js'}}"></script>
     <script src="{{asset 'js/respond.js'}}"></script>
 
@@ -67,13 +66,18 @@
           <h1>{{@blog.title}}</h1>
         </a>
         <p class="header-description">
-          Software Developer at <a href="http://elementthree.com" target="_blank">Element Three</a>.<br>
-          Say <a href="mailto:hello@zackphilipps.com">hello</a> or
+          Software Developer at <a href="http://elementthree.com" target="_blank">Element Three</a>. Music nerd, digital design obsessor, equality advocate.
+        </p>
+        <p>
           <a href="http://linkedin.com/in/zackphilipps" target="_blank">
-            <i class="ion-social-linkedin"></i>
+            <ion-icon name="logo-linkedin"></ion-icon>
           </a>
           <a href="http://github.com/zackphilipps" target="_blank">
-            <i class="ion-social-octocat"></i></a>.
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a href="mailto:hello@zackphilipps.com">
+            <ion-icon name="ios-mail"></ion-icon>
+          </a>
         </p>
         <p>
           <a href="http://portfolio.zackphilipps.com" id="docs-mobile">View My Portfolio</a>
@@ -93,6 +97,7 @@
     {{ghost_foot}}
 
     {{! Deferred scripts }}
+    <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
     <script src="{{asset 'js/fastclick.js'}}"></script>
     <script src="{{asset 'js/cactus.js'}}"></script>
 

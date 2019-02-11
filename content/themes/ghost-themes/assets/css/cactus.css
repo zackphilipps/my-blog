@@ -171,8 +171,7 @@ em, i {
 header h1 {
   font-size: 30px;
   color: #222;
-  font-weight: 300;
-  /*letter-spacing: -1px;*/
+  font-weight: 900;
   line-height: 34px;
 }
 
@@ -212,7 +211,7 @@ h1, h2, h3 {
 
 h1 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 900;
 }
 
 h2 {

@@ -757,3 +757,7 @@ Author
 .tag-template #post-body {
   margin-top: 10px;
 }
+
+ion-icon {
+  font-size: 22px;
+}

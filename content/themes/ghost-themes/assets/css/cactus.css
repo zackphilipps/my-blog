@@ -87,7 +87,7 @@ a#documentation {
 }
 
 #wrapper {
-  padding: 100px 40px 100px 40px;
+  padding: 80px 40px 80px 40px;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -150,7 +150,7 @@ em, i {
 }
 
 #title .avatar {
-  width: 80px;
+  width: 150px;
   border-radius: 50%;
   display: block;
   margin: 0 auto 20px;
@@ -344,7 +344,7 @@ img {
 Post List
 =========================================== */
 #post-list, #archive-list {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 #post-list li, #archive-list li {
@@ -384,7 +384,7 @@ Post List
 #post-list-footer {
   border-top: 1px solid #eee;
   margin-top: 20px;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 #archive-link {
@@ -417,7 +417,7 @@ footer {
 #index-meta {
   font-size: 13px;
   line-height: 1.4;
-  margin-top: 100px;
+  margin-top: 80px;
   color: #444;
   text-align: center;
 }

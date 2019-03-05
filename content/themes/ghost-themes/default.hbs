@@ -42,7 +42,6 @@
     <link rel="stylesheet" href="{{asset 'css/basics.css'}}">
     <link rel="stylesheet" href="{{asset 'css/gist.css'}}">
     <link rel="stylesheet" href="{{asset 'css/cactus.css'}}">
-    <link rel="stylesheet" href="{{asset 'css/ionicons.min.css'}}">
     <script src="{{asset 'js/html5shiv-printshiv.js'}}"></script>
     <script src="{{asset 'js/respond.js'}}"></script>
 
@@ -58,7 +57,7 @@
   </head>
   <body class="{{body_class}}">
 
-    <a href="http://portfolio.zackphilipps.com" id="docs">View My Portfolio</a>
+    {{!-- <a href="http://portfolio.zackphilipps.com" id="docs">View My Portfolio</a> --}}
 
     <section id="wrapper">
       <header id="header">
@@ -67,21 +66,25 @@
           <h1>{{@blog.title}}</h1>
         </a>
         <p class="header-description">
-          Software Developer at <a href="http://elementthree.com" target="_blank">Element Three</a>.<br>
-          Co-Creator of <a href="http://scratchtheme.com" target="_blank">Scratch</a>.<br>
-          Say <a href="mailto:hello@zackphilipps.com">hello</a> or
-          <a href="http://twitter.com/zackphilipps" target="_blank">
-            <i class="ion-social-twitter"></i>
-          </a>
-          <a href="http://linkedin.com/in/zackphilipps" target="_blank">
-            <i class="ion-social-linkedin"></i>
-          </a>
-          <a href="http://github.com/zackphilipps" target="_blank">
-            <i class="ion-social-octocat"></i></a>.
+          Software Developer at <a href="http://elementthree.com" target="_blank">Element Three</a>. I’m passionate about amplifying underrepresented voices.
+        </p>
+        <p class="header-description">
+          If you are too, let’s talk.
         </p>
         <p>
-          <a href="http://portfolio.zackphilipps.com" id="docs-mobile">View My Portfolio</a>
+          <a href="http://linkedin.com/in/zackphilipps" target="_blank">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="http://github.com/zackphilipps" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a href="mailto:hello@zackphilipps.com">
+            <ion-icon name="ios-mail"></ion-icon>
+          </a>
         </p>
+        {{!-- <p>
+          <a href="http://portfolio.zackphilipps.com" id="docs-mobile">View My Portfolio</a>
+        </p> --}}
       </header>
 
       {{{body}}}
@@ -97,6 +100,7 @@
     {{ghost_foot}}
 
     {{! Deferred scripts }}
+    <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
     <script src="{{asset 'js/fastclick.js'}}"></script>
     <script src="{{asset 'js/cactus.js'}}"></script>
 
